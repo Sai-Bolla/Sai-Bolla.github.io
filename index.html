@@ -1,11 +1,182 @@
 <!DOCTYPE html>
-<html>
-    <head>Sai Bolla</head>
-    <body>
-        <header class="header">
-            <h1>Sai Bolla</h1>
-        </header>
-        
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
-</html>
+<header class="header">
+  <div class="header-section logo">
+    <img src="assets/header-logo.svg" alt="Logo" style="height: 30px;">
+  </div>
+  <nav class="header-section pages nav">
+    <ul class="nav-list dm-sans-font">
+      <li><a href="entertainers">For entertainers</a></li>
+      <li><a href="creators">For Creators</a></li>
+      <li><a href="aboutus">About</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="header-section login">
+    <button class="btn login-btn dm-sans-font">
+      <a href="login.html">Login</a>
+    </button>
+  </div>
+  <button class="menu-icon" aria-label="Toggle Navigation">☰</button>
+</header>
+
+
+
+<style>
+/* Your Header Styles */
+.header {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #f8f2f0;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.header-section {
+  padding: 5px 10px;
+  display: flex; /* Added for consistent layout of header sections */
+  align-items: center;
+}
+
+.header-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header-section ul li {
+  margin: 0 10px;
+}
+
+.header-section ul li a { /* Added for styling the links */
+    color: #f87a74;  /*Set default color for the links*/
+    text-decoration: none; /*remove underline*/
+    font-size: 1.25rem;
+    letter-spacing: -0.05rem;
+}
+.header-section ul li a:hover {
+   color: #f87a74; /* Maintain color on hover */
+}
+
+.header-section button {
+  background-color: #ff4649;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.header-section button a{
+    color: white;
+    text-decoration: none;
+  
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Existing Styles from Previous Response (Modified) */
+.logo img {
+  height: 30px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #f87a74;
+}
+
+/* Media query to hide nav and show menu icon on small screens */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none; /* Hide the list by default on small screens */
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially invisible */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-list.open {
+    display: flex;  /* Show the list when the 'open' class is added */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+    .nav-list li a{
+        color: #f87a74;
+    }
+
+  .menu-icon {
+    display: block;
+    margin: 0 auto; /* Center the icon horizontally */
+  }
+    .header{
+        position: relative;
+        display: block; /* change display to block */
+    }
+    .header-section.logo{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .header-section.login{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.querySelector('.menu-icon');
+  const navList = document.querySelector('.nav-list');
+
+  if (menuIcon && navList) {
+    menuIcon.addEventListener('click', () => {
+      navList.classList.toggle('open');
+    });
+  }
+});
+</script>
