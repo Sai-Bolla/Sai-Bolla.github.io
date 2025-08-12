@@ -7,9 +7,10 @@ body {
 }
 nav{
     background-color: white;
+    width: 100%;
 }
 nav ul{
-    width: 100%;
+    width: 95%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
