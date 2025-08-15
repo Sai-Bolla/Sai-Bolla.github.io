@@ -53,6 +53,12 @@ header{
     width: 100%;
 }
 
+.card-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+
+}
+
 
 .card-container {
   display: flex;
@@ -137,6 +143,107 @@ header{
   border-bottom-right-radius: 60px;
   background-color: white;
   text-align: left;
+}
+
+.tag-container{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1vh;
+}
+
+.tag-container li{
+    padding-right: 4px;
+    padding-bottom: 18px;
+    
+}
+
+.tag{
+    text-decoration: none;
+    font: 1em sans-serif;
+    border: 2px solid;
+    border-radius: 16px;
+    border-color: black;
+    background-color: aqua;
+    padding: 6px;
+}
+
+.tag-html{
+    border-color: #811a00;
+    background-color: #e96228;
+    color: #811a00;
+}
+
+.tag-js{
+    border-color: rgb(49, 49, 49);
+    background-color: yellow;
+    color: rgb(49, 49, 49);
+}
+
+.tag-css{
+    border-color: #0d0081;
+    background-color: rgb(94, 181, 253);
+    color: #0d0081;
+}
+
+.tag-ai{
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(234, 0, 255);
+    color: #ffffff;
+}
+
+.tag-ds{
+    border-color: rgb(0, 75, 16);
+    background-color: rgb(21, 114, 41);
+    color: #ffffff;
+}
+
+.tag-da{
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
+
+.tag-ai{
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(234, 0, 255);
+    color: #ffffff;
+}
+
+.tag-robo{
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(234, 0, 255);
+    color: #ffffff;
+}
+
+.tag-python{
+    border-color: rgb(0, 17, 255);
+    background-color: rgb(238, 255, 0);
+    color: #4341c4;
+}
+
+.tag-numpy{
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(234, 0, 255);
+    color: #ffffff;
+}
+
+.tag-embed{
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(234, 0, 255);
+    color: #ffffff;
+}
+
+.tag-cplus{
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(234, 0, 255);
+    color: #ffffff;
+}
+
+.tag-arduino{
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(234, 0, 255);
+    color: #ffffff;
 }
 
 footer{
