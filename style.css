@@ -162,10 +162,11 @@ header{
     text-decoration: none;
     font: 1em sans-serif;
     border: 2px solid;
-    border-radius: 16px;
+    border-radius: 18px;
     border-color: black;
     background-color: aqua;
-    padding: 6px;
+    /* padding goes:  up, right, down, left*/
+    padding: 6px 8px 6px 8px;
 }
 
 .tag-html{
@@ -212,8 +213,8 @@ header{
 
 .tag-robo{
     border-color: rgb(49, 49, 49);
-    background-color: rgb(234, 0, 255);
-    color: #ffffff;
+    background-color: rgb(255, 187, 0);
+    color: #000000;
 }
 
 .tag-python{
@@ -224,25 +225,25 @@ header{
 
 .tag-numpy{
     border-color: rgb(49, 49, 49);
-    background-color: rgb(234, 0, 255);
+    background-color: rgb(0, 225, 255);
     color: #ffffff;
 }
 
 .tag-embed{
     border-color: rgb(49, 49, 49);
-    background-color: rgb(234, 0, 255);
+    background-color: rgb(0, 0, 0);
     color: #ffffff;
 }
 
 .tag-cplus{
     border-color: rgb(49, 49, 49);
-    background-color: rgb(234, 0, 255);
+    background-color: rgb(195, 0, 255);
     color: #ffffff;
 }
 
 .tag-arduino{
     border-color: rgb(49, 49, 49);
-    background-color: rgb(234, 0, 255);
+    background-color: rgb(0, 119, 255);
     color: #ffffff;
 }
 
