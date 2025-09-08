@@ -53,6 +53,27 @@ nav a:hover{
     background-color: #f0f0f0;
 }
 
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%
+}
+.sidebar a{
+    width: 100%;
+}
+
 header{
     display: flex;
     height: 10vh;
@@ -83,8 +104,13 @@ h1{
     font-size: 2em;
 }
 
+.about-header{
+    padding-top: 4em;
+
+}
+
 .project-header{
-    padding-top:3em;
+    padding-top: 4em;
 }
 
 
@@ -108,6 +134,11 @@ h1{
         flex: 0 1 calc(98% - 1em);
         padding: 2%;
     }
+    
+    .hideMenu{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 40em) {
@@ -121,6 +152,16 @@ h1{
         flex: 0 1 calc(50% - 1em);
         padding: 1%;
     }
+
+    .hideMenu{
+        display: none;
+    }
+
+    .hideMenuButton{
+        display: flex;
+    }
+
+    
 }
 
 @media screen and (min-width: 52em) {
@@ -134,6 +175,13 @@ h1{
         padding: 1%;
 
     }
+    
+    .hideMenu{
+        display: flex;
+    }
+    .hideMenuButton{
+        display: none;
+    }
 }
 @media screen and (min-width: 60em) {
     .card {
@@ -146,6 +194,13 @@ h1{
         padding: 1%;
         max-width: 33rem;
     }
+
+    .hideMenu{
+        display: flex;
+    }
+
+    
+
 }
 
 .card .image-container {
