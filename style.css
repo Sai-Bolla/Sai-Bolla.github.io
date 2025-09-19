@@ -3,24 +3,39 @@
     padding: 0;
 }
 
+
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: #f0f0f0;
+    background: var(--background);
     text-align: center;
     align-items: center;
+    
+    
+    --background: #f0f0f0;
+    --nav: white;
+    --text: black;
+
+}
+
+.darkMode{
+    --background: black;
+    --nav: #2d3748;
+    --text: white;
 }
 
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
 }
 nav{
-    background-color: white;
+    background-color: var(--nav);
     width: 100%;
     display: flex;
     justify-content: space-between;
     position: fixed;
+    color: var(--text);
 }
 
 nav h1{
@@ -28,6 +43,7 @@ nav h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
     padding-left: 9%;
+    
 }
 nav ul{
 
@@ -47,10 +63,11 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: var(--text);
+    background-color: var(--nav);
 }
 nav a:hover{
-    background-color: #f0f0f0;
+    background-color: var(--background);
 }
 
 .sidebar{
@@ -60,7 +77,7 @@ nav a:hover{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: white;
+    background-color: (--nav);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -77,13 +94,13 @@ nav a:hover{
 header{
     display: flex;
     height: 10vh;
-    background-color: #f0f0f0;
+    background-color: var(--background);
     width: 100%;
 }
 
 .card-title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
 
 }
 
@@ -97,11 +114,13 @@ header{
 .home-section h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 5em;
+    color: var(--text);
 }
 
 h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
+    color: var(--text);
 }
 
 .rainbow{
@@ -126,6 +145,10 @@ h1{
 .about-header{
     padding-top: 4em;
 
+}
+
+.about-header p{
+    padding-top: 1em;
 }
 
 .project-header{
@@ -156,6 +179,10 @@ h1{
     
     .hideMenu{
         display: none;
+    }
+
+    .hideMenuButton{
+        display: flex;
     }
 
 }
@@ -217,7 +244,6 @@ h1{
     .hideMenu{
         display: flex;
     }
-
     
 
 }
@@ -243,8 +269,16 @@ h1{
   border-top: 1px solid white; /* Horizontal line */
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
-  background-color: white;
+
+  background-color: var(--nav);
   text-align: left;
+}
+
+.tag-search{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
 }
 
 .tag-container{
@@ -354,7 +388,7 @@ h1{
 footer{
     display: flex;
     height: 20vh;
-    background-color: white;
+    background-color: var(--nav);
     align-items: center;
     padding-left: 5em;
     padding-right: 5em;
