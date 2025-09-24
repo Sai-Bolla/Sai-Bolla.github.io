@@ -38,6 +38,21 @@ nav{
     color: var(--text);
 }
 
+#theme-switch{
+    display: flex;
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkMode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkMode #theme-switch svg:last-child{
+    display: flex;
+}
+
 nav h1{
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

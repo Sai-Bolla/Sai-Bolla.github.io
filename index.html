@@ -5,25 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sai Bolla</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js" defer></script>
   
 </head>
 
 <body>
   <nav>
     <h1>Sai Bolla</h1>
-
-    <!-- This sidebar is for desktop-->
-    <ul>
-      <li onclick="themeToggle()"><a href="javascript:void(0)">Mode</a></li>
-      <li class="hideMenu"><a href="#About">About</a></li>
-      <li class="hideMenu"><a href="#Projects">Coding Projects</a></li>
-      <li class="hideMenu" onclick="underConstruction()"><a href="#">Design Portfolio</a></li>
-      <li class="hideMenu"><a href="#Contact">Contact</a></li>
-      <li onclick="showSidebar()" class="hideMenuButton"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--text)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-    </ul>
-
-    <!-- This sidebar is for mobile-->
+    <!-- This is the sidebar list is for mobile-->
     <ul class="sidebar hideMenuButton">
       
       <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--text)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -31,7 +20,20 @@
       <li><a href="#Projects">Coding Projects</a></li>
       <li><a href="#">Design Portfolio</a></li>
       <li><a href="#Contact">Contact</a></li>
-      </ul>
+    </ul>
+
+    <!-- This list is for desktop-->
+    <ul>
+      <li class="hideMenu"><a href="#About">About</a></li>
+      <li class="hideMenu"><a href="#Projects">Coding Projects</a></li>
+      <li class="hideMenu" onclick="underConstruction()"><a href="javascript:void(0)">Design Portfolio</a></li>
+      <li class="hideMenu"><a href="#Contact">Contact</a></li>
+      <li id="theme-switch" onclick="themeToggle()"><a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="var(--text)"><path d="M479.96-144Q340-144 242-242t-98-238q0-140 97.93-238t237.83-98q13.06 0 25.65 1 12.59 1 25.59 3-39 29-62 72t-23 92q0 85 58.5 143.5T648-446q49 0 92-23t72-62q2 13 3 25.59t1 25.65q0 139.9-98.04 237.83t-238 97.93Z"/></svg><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="var(--text)"><path d="M479.77-288Q400-288 344-344.23q-56-56.22-56-136Q288-560 344.23-616q56.22-56 136-56Q560-672 616-615.77q56 56.22 56 136Q672-400 615.77-344q-56.22 56-136 56ZM216-444H48v-72h168v72Zm696 0H744v-72h168v72ZM444-744v-168h72v168h-72Zm0 696v-168h72v168h-72ZM269-642 166-742l51-55 102 104-50 51Zm474 475L642-268l49-51 103 101-51 51ZM640-691l102-101 51 49-100 103-53-51ZM163-217l105-99 49 47-98 104-56-52Z"/></svg></a></li>
+
+      <li onclick="showSidebar()" class="hideMenuButton"><a ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="var(--text)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+
+    
   </nav>
 
   <section class="home-section">

@@ -10,7 +10,8 @@ function hideSidebar(){
 
 function themeToggle(){
     var theme = document.body;
-    theme.classList.toggle("darkMode");
+    theme.classList.toggle("darkMode")
+
 }
 
 function underConstruction(){
